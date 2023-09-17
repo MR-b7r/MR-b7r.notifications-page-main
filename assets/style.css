@@ -1,0 +1,203 @@
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    background-color: var(--Very-light-grayish-blue);
+
+}
+a {
+    font-size: 16px;
+    transition: .4s all ease;
+    cursor: pointer;
+
+}
+a:hover {
+    color: var(--Blue);
+}
+.container{
+    background-color: var(--White);
+    box-shadow: 0px 6px 10px var(--Light-grayish-blue-1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    gap: 25px;
+
+    width: 43rem;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header h2 {
+    font-size: 22px;
+    color: var(--Very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+.header h2 span  {
+    padding: 4px 8px;
+    background-color: var(--Blue);
+    color: var(--White);
+    border-radius: 8px;
+    align-self: center;
+    font-size: 19px;
+}
+.header .more {
+    color: var(--Grayish-blue);
+}
+.header .more:hover {
+    color: var(--Blue);
+}
+.body {
+    width: 100%;
+}
+.card{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    position: relative;
+}
+.card.active {
+    background-color: var(--Very-light-grayish-blue);
+}
+.card .info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.card img {
+    width: 40px;
+}
+.card p {
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 10px;
+    font-weight: 500;
+    
+}
+.card p a.name {
+    color: var(--Very-dark-blue);
+    font-weight: bold ;
+}
+.card p a.name:hover {
+    color: var(--Blue);
+}
+.card p .activity {
+    position: relative;
+    font-weight: 700;
+    color: var(--Dark-grayish-blue);
+}
+.card p .activity:hover {
+    color: var(--Blue);
+}
+.card.active p .activity::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--Red);
+    display: inline-block;
+    margin-left: 3px;
+    /* right: -10px;
+    top: 50%;
+    transform: translate(50%, -50%); */
+}
+.card span.time{
+    font-size: 16px;
+    color: var(--Grayish-blue);
+}
+
+.message-container {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--Light-grayish-blue-2);
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.message-container .message{
+    align-items: center;
+    color: var(--Grayish-blue);
+}
+.message-container:hover{
+    background-color: var(--Light-grayish-blue-1);
+}
+
+.img-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.img-container img {
+    max-width: 45px;
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    display: block;
+
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.copyright {
+    font-size: 10px;
+    
+}
+.copyright a {
+    color: var(--Dark-grayish-blue);
+    font-weight: bold;
+    font-size: 12px;
+}
+.copyright a:hover {
+    color: var(--Blue);
+
+}
