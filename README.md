@@ -9,7 +9,13 @@ Thanks for checking out this front-end coding challenge.
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+I've just completed a front-end coding challenge from @frontendmentor! 🎉
 
+You can see my solution here: https://www.frontendmentor.io/solutions/notifications-pagemain-with-html-css-javascript-PgHUOKPKuS
+
+Any suggestions on how I can improve are welcome!
+
+Here is live Preview https://mr-b7r.github.io/MR-b7r.notifications-page-main/
 ## The challenge
 
 Your challenge is to build out this notifications page and get it looking as close to the design as possible.
